@@ -3,16 +3,62 @@ body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
 }
+.static {
+  position: static;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  cursor: auto;
+}
 
+ header{
+	display: flex;
+	align-items: center;
+	margin: auto;
+	
+     }
+     .headerImg {
+  grid-area: logo;
+  padding: 0 2rem;
+  height: 2.813rem;
+}
+.headerNav {
+  display: flex;
+  align-items: center;
+  }
+  .headerNavLink {
+  padding: 2rem;
+  font-weight: 500;
+  text-align: center;
+  transition-duration: 0.1s;
+  border-top: 3px transparent solid;
+  border-bottom: 3px transparent solid;
+}
+ nav li{
+ 	display: flex;
+ 	justify-content: flex-start; 
+ 	align-items: flex-start;
+ 	
+ }
 
+     ul{
+     display: flex;
+     flex-flow: row nowrap ;
+     
+     }
+logo img{
+width:50px;
+height:70px;
+}
 
-
-
-
-
-
-
-
+.headerSignup {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  color: #0065FC;
+  font-weight: 600;
+}
 
 
 .info-logement
@@ -20,6 +66,7 @@ body {
 	display: flex;
 }
 #icone-i {
-align-items : row;
-justify-content : nowrap;
+flex-direction: row;
+justify-content: center;
+
 }
