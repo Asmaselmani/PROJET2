@@ -3,36 +3,46 @@ body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
 }
-.static {
-  position: static;
+
+
 }
-nav a {
+ nav a {
   color: black;
   text-decoration: none;
-  cursor: auto;
-}
-
- header{
+  }
+.nav{
+ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+ }
+ header {
 	display: flex;
 	align-items: center;
 	margin: auto;
 	
      }
-     .headerImg {
-  padding: 0 2rem;
-  height: 2.813rem;
+    .Logo-Reservia img{
+    height: 2.9;
+    padding: 35px 0px 0px;
+    color:#0065FC;
+
+    }
+
+ .Hebergement{
+ 	color: #000000
+ 	font-size: 12,7377px 
+ 	font-family:Raleway sans-serif;
+ }
+nav {
+  position: absolute;
+  left: 600px;
+  width: 20px;
 }
-.headerNav {
-  display: flex;
-  align-items: center;
-  }
-  .headerNavLink {
-  padding: 2rem;
-  font-weight: 500;
-  text-align: center;
-  transition-duration: 0.1s;
-  border-top: 3px transparent solid;
-  border-bottom: 3px transparent solid;
+ 
+ body {
+  margin-bottom: 120px;
 }
  nav li{
  	display: flex;
@@ -46,10 +56,7 @@ nav a {
      flex-flow: row nowrap ;
      
      }
-logo img{
-width:50px;
-height:70px;
-}
+
 
 .headerSignup {
   display: flex;
@@ -67,5 +74,11 @@ height:70px;
 #icone-i {
 flex-direction: row;
 justify-content: center;
+
+}
+
+div-hebergement{
+	display: flex;
+	justify-content:flex-start;
 
 }
