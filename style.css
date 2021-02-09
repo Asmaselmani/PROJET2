@@ -1,17 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
   font-family: "Raleway", "Sans serif";
-  margin: 0;
+  margin: 0px;
 }
 
-
-}
  nav a {
   color: black;
   text-decoration: none;
   }
-.nav{
- 
+  a:hover{
+  	text-decoration: none;
+  	background-color: #DEEBFF;
+  }
+
+nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,23 +25,22 @@ body {
 	margin: auto;
 	
      }
-    .Logo-Reservia img{
-    height: 2.9;
-    padding: 35px 0px 0px;
-    color:#0065FC;
+    .logo_img {
+   
+    margin left: 1rem;
+    padding:45px;
+    height: 55px;
 
     }
-
+h1{
+	font-size: 1em;
+}
  .Hebergement{
  	color: #000000
  	font-size: 12,7377px 
  	font-family:Raleway sans-serif;
  }
-nav {
-  position: absolute;
-  left: 600px;
-  width: 20px;
-}
+
  
  body {
   margin-bottom: 120px;
