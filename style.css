@@ -1,7 +1,14 @@
+/*Téléchargement de la police Raleway*/
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
 body {
   font-family: "Raleway", "Arial", "Verdana", "Sans serif";
   margin: 0px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: black;
 }
 
 .container {
@@ -13,18 +20,22 @@ body {
  nav a {
   color: black;
   text-decoration: none;
+  margin-bottom: 2rem;
+  font-style: normal;
   }
   a:hover{
   	text-decoration: none;
   	color: #0065FC;
 
+  	
   }
  
 nav li{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 40px;
+    margin: 1px;
     border:none;
 
  }
@@ -34,38 +45,120 @@ nav li{
 	flex-direction: row;
 	align-items: center;
 	padding:0px;
-	margin: 30px;
+	margin:0px ;
 
      }
+
+    /*boutton s'inscrire*/
+     .signUp{
+     	color: #0065FC;
+       font-weight: bold;
+       margin-right: 10px;
+       }
+     
      li{
      	display:flex;
      	align-items: space-between;
         margin: 20px;
      	padding:10px;
-     	border: solid;
+     	border: 2px solid;
      	border-radius: 30px;
      	color:#F2F2F2;
+     	text-decoration: none;
      }  
-
+ 
+  
     
+.fas{
+	font-size: 1.25rem;
+	color: #0065FC;
+	font-weight: circle;
+}
+
+#icone-i {
+  background-color: white;
+  border-radius: 50%;
+  border: 1x solid grey;
+  padding: 25px;
+}
     .logo_img {
    
-    margin left: 1rem;
-    padding:45px;
+    margin-right: auto;
+    padding:20px;
     height: 65px;
 
     }
-h1{
-	font-size: 1.3em;
+
+.search_data
+{
+	border-radius: 0.3rem;
+	text-decoration-color: black;
+	width: 12%;
+	height: 10%;
 }
+
+
+
+
+
+h1{
+	font-size: 1.25em;
+	font-weight: solid;
+    line-height: 1.4;
+}
+
+h2{
+	font-size: 1.25em;
+	font-weight: solid;
+    line-height: 1.4;
+
+}
+
+
+
+h3{
+	font-size: 1.13;
+ 	font-weight: bold;
+    line-height: 1.2;
+ }
+
 
  p{
  	font-size: 1em;
 
  }
- h3{
- 	font-weight: bold;
- }
+
+.search{
+	color:white;
+	font-size: 1rem;
+	font-weight: solid;
+	background-color: #0065FC;
+	border-radius: 0.4rem;
+	border: none;
+
+}
+.filtre{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left:5px;
+    flex-wrap: wrap;
+    border: none;
+
+}
+ 
+
+
+
+.fa-map-marker-alt {
+    color: black;
+    background-color: #F2F2F2;
+    top: 30%;
+    left: 50%;
+    background-size: contain;
+
+  }
+   
  nav li{
  	display: flex;
  	justify-content: flex-start; 
@@ -107,10 +200,13 @@ padding:18px;
 }
 
 
-#filtration{
-	border: none;
-}
-}
+
+
 #hebergement img {
 	object-fit: cover;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    
