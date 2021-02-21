@@ -1,11 +1,14 @@
 /*Téléchargement de la police Raleway*/
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
 
 body {
   font-family: "Raleway", "Arial", "Verdana", "Sans serif";
-  box-sizing: border-box;
-  max-width: 1440px;
   margin: 0px;
   padding: 0px;
   font-weight: 400;
@@ -17,6 +20,7 @@ body {
 .container {
     max-width: 1350px;
     margin: auto;
+    width:100%;
     display: flex;
     flex-direction: column;
 }
@@ -70,6 +74,8 @@ nav li{
      	border-radius: 30px;
      	color:#F2F2F2;
      	text-decoration: none;
+
+
      }  
  
   
@@ -89,17 +95,28 @@ nav li{
    
     margin-right: auto;
     padding:20px;
-    height: 55px;
+    height: 85px;
 
     }
 .search{
 	color:white;
-	font-size: 1.1rem;
-	border: 2px solid white;
+	font-weight: solid;
+	font-size: 20px;
+	display: inline-block;
+	border: 1px solid transparent;
 	background-color: #0065FC;
-	border-radius: 0.4rem;
+	border-radius: 0rem 0.8rem 0.8rem 0rem ;
 	border-width: 70%;
+	cursor: pointer;
+	line-height: 2;
 	height: 40px;
+	margin: 20px;
+
+}
+
+.search:hover{
+	background-color:  #0065FC;
+
 }
 
 .search_data
@@ -112,7 +129,13 @@ nav li{
 	padding-left:10px;
 }
 
-
+.fa-map-marker-alt {
+    color: black;
+    background-color:#F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    padding: 15px;
+    font-size: 20px;
+  }
 
 
 
@@ -158,13 +181,7 @@ h3{
 
 
 
-.fa-map-marker-alt {
-    color: black;
-    background-color:#F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-    padding: 15px;
-    font-size: 20px;
-  }
+
    
  nav li{
  	display: flex;
@@ -195,6 +212,7 @@ h3{
 
 	display: flex;
 	justify-content: flex-start;
+	align-items: center;
 	flex-wrap:nowrap;
 	margin: 0px;
 	padding:10px;
@@ -204,22 +222,24 @@ h3{
 #icone-i {
 
 color:  #0065FC;
-padding:14px;
+padding: 9px;
+margin-right: 10px;
 font-size: 13px;
 background-color: white;
 border-radius: 50% ;
+width:10px;
+height:10px;
 border: 2px solid grey;
 display: flex;
 align-items: center;
-
-
+justify-content: space-around;
 
 
 }
 
 
 
-.hebergement {
+#Marseille{
 	object-fit: cover;
 	background-color: #F2F2F2;
     display: flex;
@@ -227,10 +247,39 @@ align-items: center;
     justify-content: space-between;
     align-content: space-between;
     border-radius: 20px;
-    padding: 44px 36px 44px 36px;
+    padding: 5px;
     max-width: 805px;
 }
-	 
+	
+#les-plus-populaire{
+	display: flex;
+	flex-direction: column;
+	object-fit: cover;
+	background-color: #F2F2F2;
+}
+
+
+.fas fa-chart-line{
+	color:black;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+	 #Activités{
+	 object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    border-radius: 20px;
+    padding: 44px 36px 44px 36px;
+    max-width: 805px;	
+	 }
 
 
 @media screen and (max-width: 768px) {
