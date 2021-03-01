@@ -3,14 +3,15 @@
 
 
 body {
-  font-family: "Raleway", "Arial", "Verdana", "Sans serif";
+  font-family: Raleway, Sans serif;
   box-sizing: border-box;
   margin: 0px;
-  padding: 0px;
   font-weight: normal;
   font-size: 1rem;
-  line-height: 1.2;
+  line-height: 1;
   color: black;
+  width: 100%;
+  
 
 
 }
@@ -28,36 +29,28 @@ body {
   text-decoration: none;
   font-weight: normal;
   font-style: normal;
-  margin-bottom: 2rem;
-
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+  margin-right:-60px;
 
   }
  header a:hover{
   
   	color: #0065FC;
   	border-top: 2px solid #0065FC ;
-  	padding-top: 1rem;
+  	margin-top:-5px;
   	font-weight: 200;
   	transition-duration: 0.3s;
  		
   }
  
-nav li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    padding: 40px;
-    margin: 1px;
-    border: none;
-    font-weight: normal;
-}
 
-   ul a {
-   	text-decoration: none;
-   	color: black;
-   	font-weight: bold;
-   } 
+li:hover{
+font-weight: normal;
+
+
+}
+ 
 
 
 
@@ -68,15 +61,18 @@ nav li{
 	flex-direction: row;
 	align-items: center;
 	padding:40px;
-	margin:1px ;
+	margin-top:-60px ;
 	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+
 
      }
 
     /*boutton s'inscrire*/
      .signUp{
      	color: #0065FC;
-       font-weight: bold;
+       font-weight: bolder;
        margin-right: 10px;
        display: flex;
        text-decoration: none;
@@ -86,34 +82,51 @@ nav li{
      li{
 
         margin: 20px;
-     	padding:10px;
+     	list-style-type: none;
      	border: 1.8px solid #D3D3D3;
      	border-radius: 30px;
-     	color:#F2F2F2;
-     	text-decoration: none;	
+     	text-decoration: none;
+     	font-weight:  bolder;
 
+
+
+       
      }  
  
+nav li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 50px;
+    margin: 5px;
+    border: none;
+    font-weight: normal;
+  
+}
+ul a{
+	text-decoration: none;
+	 color: #000000;
+    
+
+}
  
   
 .fa-money-bill-wave,.fa-dog,.fa-child, .fa-heart{
 	font-size: 1.25rem;
 	color: blue;
 	border-radius: 50% ;
-	background-color: #F2F2F2;
-	padding:0.5rem;
-	margin-top:-0.7rem;
-	margin-left: -1rem;
-	margin-bottom: -0.8rem;
-	margin-right: 0.1rem;
+	background-color:#DEEBFF ;
+	padding:0.6rem;
 	
+	position: relative;
 	display: flex;
 	align-self: center;
 	
 	
 
 }
-.fas{
+.filtration i{
 	color:#0065FC;
 }
 
@@ -130,32 +143,34 @@ nav li{
 	font-size: 1.1rem;
 	border: 2px solid white;
 	background-color: #0065FC;
-	border-radius: 0.4rem;
+	border-radius: 0rem 0.6rem 0.6rem 0rem;
 	border-width: 70%;
-	height: 40px;
+	height: 50px;
 	cursor: pointer;
+	font: Arial;
 }
 
 .search_data
 {
 
-	background-color:  white;
+	background-color:#FFFFFF;
 	border: none;
 	font-size: 1.1rem;
 	font-weight: bold;
 	width: 15%;
-	padding-left:10px;
-	height: 35px;
+	padding-left:13px;
+	height: 45px;
 	margin-right: -5px;
 	border: 1px solid #F2F2F2;
 	margin-left: -5px;
-	color: black;
+	color:#000000;
+	font: 20px,serif;
 }
 
 .fa-map-marker-alt {
     color: black ;
     background-color:#F2F2F2;
-    border-radius: 15px 0px 0px 15px;
+    border-radius:15px 0px 0px 15px ;
     padding:13px;
     font-size: 20px;
   }
@@ -165,7 +180,7 @@ nav li{
 h1{
 	font-size: 1.28em;
 	font-weight: bold;
-    margin-top: -40px;
+    margin-top: -80px;
 }
 
 h2{
@@ -176,11 +191,15 @@ h2{
 }
 
 
+img {
+	border-radius: 7%;
+}
 
-h3{
+figcaption{
 	font-size: 1.13em;
  	font-weight: bold;
     line-height: 1.2;
+
  }
 
 
@@ -193,8 +212,9 @@ h3{
 
 .filtre{
    
-    margin-left:5px;
+    margin-left:-10px;
     border: none;
+    padding-top: 15px;
     text-decoration: none;
 
 }
@@ -240,14 +260,16 @@ ul{
 #icone-i {
 
 color:  #0065FC;
-padding:14px;
+padding:  5px ;
+padding-bottom: 17px;
+padding-left: 7px;
+padding-right: 10px;
 font-size: 15px;
 background-color: white;
 border-radius: 50%  ;
 border: 1px solid grey;
-display: flex;
-align-items: center;
-margin-top: 10px;
+
+margin-top: 12px;
 margin-right: 10px;
 height: 0.1rem;
 width:0.1rem;
@@ -261,7 +283,7 @@ width:0.1rem;
 	background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: space-between;
     border-radius: 20px;
     padding: 44px 36px 44px 36px;
@@ -270,7 +292,6 @@ width:0.1rem;
 	 
 
 
-@media screen and (max-width: 768px) {
 
     
 
@@ -299,7 +320,7 @@ aside{
   
 }
 
-footer{
+#footer{
 	background-color: #F2F2F2;
 	margin-top:150px;
 	margin-right:20px;
@@ -340,4 +361,6 @@ text-decoration: none;
  }
 
 
- 
+ /****************
+   MOBILE****** 
+ *****************/  
