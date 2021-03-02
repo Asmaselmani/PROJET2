@@ -24,6 +24,8 @@ body {
     overflow: hidden;
 
     }
+
+  /*----------Header-------------*/  
  nav a {
   color: black;
   text-decoration: none;
@@ -80,6 +82,7 @@ font-weight: normal;
        align-items: center;
        }
      
+     /*-------------Main----------*/
      li{
 
         margin: 20px;
@@ -186,26 +189,33 @@ h1{
 }
 
 h2{
-	font-size: 1.25em;
-	font-weight: : bold;
-	font: Raleway sans serif;
-
-
-
+	font-size: 1.4em;
+	font-weight: : double;
+	font: Raleway sans serif serif;
+    margin-left: 20px;
+    line-height: 20px;
+    padding-top:-20px;
 
 }
  
- 
+ h3{
+ 	margin-top: 10px;
+ 	margin-left:20px;
+ }
+
+ h3 >a {
+ 	text-decoration: none;
+ 	color:black;
+ 	font-size: 14px;
+ 	margin-left:3em;
+ }
+
 
 img {
 	border-radius: 7%;
 }
 
-figcaption{
-	font-size: 1.13em;
- 	font-weight: bold;
 
- }
 
 
  p{
@@ -235,13 +245,6 @@ ul{
      flex-wrap: nowrap;
      
      }
-
-
-   
- 
-
-	 
-
 
 .headerSignup {
   display: flex;
@@ -273,7 +276,6 @@ font-size: 15px;
 background-color: white;
 border-radius: 50%  ;
 border: 1px solid grey;
-
 margin-top: 12px;
 margin-right: 10px;
 height: 0.1rem;
@@ -283,47 +285,89 @@ width:0.1rem;
 
 
 
-.hebergement {
-	object-fit: cover;
+#Marseille {
+	
 	background-color: #F2F2F2;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction:column;
+    justify-content: space-between;
     border-radius: 20px;
-    padding: 44px 36px 44px 36px;
+    padding: 30px 40px 40px 30px;
     max-width: 705px;
+    list-style-type: none;
+    margin: 20px;
    
 }
-	 
-
+.hebergement1{
+	display: flex;
+	flex-direction: row;
+padding-top: 20px;
+} 
+ .hebergement2{
+ 	display: flex;
+ 	flex-direction: row;
+ }
 
 
     
 
- .fa-chart-line{
- 	color:black;
- 	display: flex;
- 	justify-content: space-between; 
- }
-
+ 
 
  .fa-star {
     color: blue;
     margin-left: 0.3em;
+    display: flex;
+    
 }
 
 figure{
-border-radius: 15px;
-
-   border: white 1px solid;
-    background-color: white;
-   
-    padding: 3px 3px 0px 3px;
-    box-shadow: 0 0 5px 0.2em #e2e2e2;
+border-radius: 20px;
+border: white 1px solid;
+background-color: white;
+object-fit: cover;
+width: 210px;
+height: 115px;
+margin: 20px 20px ;
+margin-top:20px;
+padding-left:5px;
+padding-bottom: 7rem;
+padding-top: 0.6em;
+padding-right: 2.7rem;
+font-size: 12px;
+box-shadow: 3px 3px 5px #DDD7DE;
+font-weight: bolder;
 }
+
+
+figcaption{
+	font-size: 1.13em;
+ 	font-weight: bold;
+
+ }
+
+
+.caption{
+	display: flex;
+	flex-direction: column;
+	line-height: 2px;
 }
+ 
+
+ .caption a{
+	font-size: 11px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: normal;
+    color: black;
+}
+ 
+ figure img{
+ 	width: 250px;
+ 	height: 150px;
+ }
 
 
+/*---------/aside-------*/
 
 aside{
 	display: flex;
@@ -331,9 +375,30 @@ aside{
 	 margin-right: 40px;
      background-color: #F2F2F2;
      border-radius: 20px;
+     max-width: 400px;
   
 }
+aside img{
+	width: 150px;
+	height: 150px;
+	border-radius: 20px 0px 0px 20px;
+}
+ .populaire{
+ 	display: flex;
+ 	flex-direction: row;
+	
+ }
 
+.fa-chart-line{
+ 	color:black;
+ 	display: flex;
+ 	justify-content: space-between; 
+ 	margin-top: 22px;
+ 	margin-left: 140px;
+ }
+
+
+/*---------Footer----------*/
 #footer{
 	background-color: #F2F2F2;
 	margin-top:150px;
@@ -343,7 +408,6 @@ aside{
 	justify-content: space-between;
 
 }
-
 
 
 footer>.about> a{
@@ -368,13 +432,7 @@ text-decoration: none;
     margin-left: 1em;
  }
  
- h3 >a {
- 	text-decoration: none;
- 	color:black;
- 	font-size: 14px;
- 	margin-left:3em;
- }
-
+ 
 
  /****************
    MOBILE****** 
