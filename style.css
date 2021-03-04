@@ -3,7 +3,7 @@
 
 
 body {
-  font-family: Raleway, Sans serif;
+  font-family: Raleway;
   box-sizing: border-box;
   margin: 0px;
   font-weight: normal;
@@ -34,24 +34,22 @@ body {
   margin-bottom: 1rem;
   padding-top: 2rem;
   margin-right:-60px;
+  line-height: 40px;
 
   }
  header a:hover{
   
   	color: #0065FC;
   	border-top: 2px solid #0065FC ;
-  	margin-top:-5px;
+  	margin-top:-9px;
   	font-weight: 200;
   	transition-duration: 0.3s;
+
  		
   }
  
 
-li:hover{
-font-weight: normal;
 
-
-}
  
 
 
@@ -80,6 +78,7 @@ font-weight: normal;
        display: flex;
        text-decoration: none;
        align-items: center;
+
        }
      
      /*-------------Main----------*/
@@ -90,13 +89,12 @@ font-weight: normal;
      	border: 1.8px solid #D3D3D3;
      	border-radius: 30px;
      	text-decoration: none;
-     	font-weight:  bolder;
-
-
-
-       
+     	font-weight:  bolder; 
      }  
- 
+
+
+        
+
 nav li{
     display: flex;
     justify-content: space-between;
@@ -105,16 +103,20 @@ nav li{
     padding: 50px;
     margin: 5px;
     border: none;
-    font-weight: normal;
+    font-weight: bold;
   
 }
 ul a{
 	text-decoration: none;
 	 color: #000000;
 
-    
-
 }
+ 
+  .filtration li:hover{
+         font-weight: bold;
+         font-family: Arial;
+
+        }
  
   
 .fa-money-bill-wave,.fa-dog,.fa-child, .fa-heart{
@@ -184,14 +186,15 @@ ul a{
 
 h1{
 	font-size: 1.28em;
-	font-weight: bold;
+    font-weight: 900;
     margin-top: -80px;
 }
+    
 
 h2{
 	font-size: 1.4em;
-	font-weight: : double;
-	font: Raleway sans serif serif;
+	
+	font: black 900;
     margin-left: 20px;
     line-height: 20px;
     padding-top:-20px;
@@ -231,6 +234,7 @@ img {
     border: none;
     padding-top: 15px;
     text-decoration: none;
+  
 
 }
 
@@ -288,14 +292,13 @@ width:0.1rem;
 #Marseille {
 	
 	background-color: #F2F2F2;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
     border-radius: 20px;
     padding: 30px 40px 40px 30px;
-    max-width: 705px;
+    max-width: 880px;
     list-style-type: none;
-    margin: 20px;
+    margin:20px;
+    padding-left:20px;
+
    
 }
 .hebergement1{
@@ -308,15 +311,12 @@ padding-top: 20px;
  	flex-direction: row;
  }
 
-
-    
-
  
-
  .fa-star {
     color: blue;
     margin-left: 0.3em;
     display: flex;
+    flex-direction: row;
     
 }
 
@@ -376,8 +376,15 @@ aside{
      background-color: #F2F2F2;
      border-radius: 20px;
      max-width: 400px;
-  
+     margin-top: -45rem;
+     margin-left: 1000px;
+     height: 700px;
+
 }
+
+
+  
+
 aside img{
 	width: 150px;
 	height: 150px;
@@ -390,49 +397,92 @@ aside img{
  }
 
 .fa-chart-line{
- 	color:black;
- 	display: flex;
- 	justify-content: space-between; 
+ 	color:black; 
  	margin-top: 22px;
  	margin-left: 140px;
  }
+ 
+
+ /*--------Activity-------*/
+ 
+ #Activity{
+ 	display: flex;
+ 	flex-direction: row;
+ 	margin-top: 60px;
+ 	max-width: 900px;
+
+ }  
+.activity1 figure{
+	width: 230px;
+	height: 320px;
+}
+ .activity1 img{
+ 	width: 200px;
+ 	height: 300px;
+ }
+
+
+
 
 
 /*---------Footer----------*/
+
 #footer{
 	background-color: #F2F2F2;
-	margin-top:150px;
+	margin-top:100px;
 	margin-right:20px;
+	padding-top:40px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 20px;
+
+
 
 }
+#footer .hosting{
+ margin-right: 100px;	
+
+}
+ #footer .assistance{
+ 	margin-right: 500px;
+ }
 
 
-footer>.about> a{
+
+#footer>.about> a{
 	text-decoration: none;
     color: black;
     margin-top: 0.5em;
     margin-left: 3em;
-    display: flex;
-    flex-direction: row;
+    line-height: 30px;
 }
- footer>.hosting> a{
-text-decoration: none;
+ #footer>.hosting> a{
+    text-decoration: none;
     color: black;
     margin-top: 0.5em;
     margin-left: 1em;
+    line-height: 30px;
  }
 
- footer>.assistance>a{
+ #footer>.assistance>a{
  	text-decoration: none;
     color: black;
     margin-top: 0.5em;
     margin-left: 1em;
+    line-height: 30px;
  }
- 
- 
+ .about h3{
+  	margin-left:46px;
+  }
+   .hosting h3{
+   margin-left: 15px;
+   }
+   .assitance h3{
+   margin-right: 2px;
+   }
+
+
 
  /****************
    MOBILE****** 
