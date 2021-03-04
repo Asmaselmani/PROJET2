@@ -64,11 +64,8 @@ body {
 	margin-top:-60px ;
 	font-weight: normal;
 	text-decoration: none;
-	color: #000000;
-
-
-
-     }
+	color: #000000.
+}
 
     /*boutton s'inscrire*/
      .signUp{
@@ -91,9 +88,6 @@ body {
      	text-decoration: none;
      	font-weight:  bolder; 
      }  
-
-
-        
 
 nav li{
     display: flex;
@@ -315,10 +309,15 @@ padding-top: 20px;
  .fa-star {
     color: blue;
     margin-left: 0.3em;
-    display: flex;
-    flex-direction: row;
-    
+     
 }
+.etoile {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+
+
 
 figure{
 border-radius: 20px;
@@ -370,16 +369,17 @@ figcaption{
 /*---------/aside-------*/
 
 aside{
-	display: flex;
-	flex-direction: column; 
+	 display: flex;
+	 flex-direction: column; 
 	 margin-right: 40px;
      background-color: #F2F2F2;
      border-radius: 20px;
      max-width: 400px;
      margin-top: -45rem;
      margin-left: 1000px;
-     height: 700px;
-
+     height:  700px;
+     
+  
 }
 
 aside figure{
@@ -397,6 +397,7 @@ aside figcaption{
 aside h3{
 	line-height: 17px;
 	font-size:1em;
+
 }
 
 aside img{
@@ -417,13 +418,18 @@ aside img{
  }
  
 
+
+ 
+
  /*--------Activity-------*/
  
  #Activity{
  	display: flex;
  	flex-direction: row;
- 	margin-top: 60px;
- 	 padding: 50px;
+ 	margin-top: 20px;
+ 	 padding: 20px;
+ 	 
+ 	 margin:10px 10px;
 
  }  
 .activity1 figure{
@@ -431,8 +437,9 @@ aside img{
 	height: 320px;
 }
  .activity1 img{
- 	width: 200px;
- 	height: 300px;
+ 	width: 260px;
+ 	height: 400px;
+ 	margin:auto;
  }
 
  .title h2{
