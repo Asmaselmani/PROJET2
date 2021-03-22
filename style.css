@@ -11,9 +11,6 @@ body {
   line-height: 1;
   color: black;
   width: 100%;
-  
-
-
 }
 
 .container {
@@ -72,7 +69,7 @@ nav li{
 	flex-direction: row;
 	align-items: center;
 	padding:40px;
-	margin-top:-60px ;
+	margin-top:-92px ;
 	font-weight: normal;
 	text-decoration: none;
 	color: #000000
