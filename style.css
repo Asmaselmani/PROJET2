@@ -59,6 +59,8 @@ nav li{
     border-top:20px;
     margin-right:-60px;
     line-height: 100px;
+    font-family: Raleway;
+    font-size: 17px;
 
   }
   
@@ -90,33 +92,35 @@ nav li{
      
      /*-------------Main----------*/
      
-
-    li{
+     li{
 
         margin: 20px;
      	list-style-type: none;
      	border: 1.8px solid #D3D3D3;
      	border-radius: 30px;
      	text-decoration: none;
-     	font-weight:  bolder; 
      	padding-right:  20px;
      	transition-duration: 0.1s;
-
-
-     }  
+     	font-weight: bold;
+     	color:#000000;
+     	font-family: verdana;
+     	font-size: 15px;
+     }
+     	
+   	ul a{
+	    text-decoration: none;
+	    color: #000000;
+	    }
+	
  
 
-ul a{
-	text-decoration: none;
-	 color: #000000;
 
-}
  
   .filtration li:hover{
-        font-weight: bolder;
-        color:black;
-        transform:scale(1.1); 
-
+        
+        transform:scale(1.1);
+        font: extra-bold 800; 
+  
         }
  
   
@@ -126,14 +130,13 @@ ul a{
 	border-radius: 50% ;
 	background-color:#DEEBFF ;
 	padding:0.6rem;
-	
 	position: relative;
 	display: flex;
 	align-self: center;
-	
-	
+
 
 }
+
 .filtration i{
 	color:#0065FC;
 }
@@ -187,18 +190,18 @@ ul a{
 
 
 h1{
-	font-size: 1.28em;
-    font-weight: 900;
+	
     margin-top: -80px;
+    font-size: 19px;
+	font: extra-blod 800;
+	font-family:verdana;
 }
     
 
 h2{
-	font-size: 1.4em;
-	
-	font: black 900;
-    margin-left: 20px;
-    line-height: 20px;
+	font-size: 1.3em;
+    margin-left: 25px;
+    line-height: 17px;
     padding-top:-20px;
 
 }
@@ -283,20 +286,22 @@ width:0.1rem;
 }
  
  figure:hover{
-   -moz-transform: scale(1.06);
-    -webkit-transform: scale(1.06);
-    transform: scale(1.06);
+   -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
 }
 #Marseille {
 	
 	background-color: #F2F2F2;
-    border-radius: 20px;
-    padding: 45px 40px 40px 30px;
-    max-width: 880px;
-    list-style-type: none;
-    margin:20px;
-    padding-left:20px;
-   
+  border-radius: 20px;
+  padding: 45px 40px 40px 30px;
+  max-width: 880px;
+  list-style-type: none;
+  margin:20px;
+  padding-left:20px;
+  font-size: 17px;
+	font: extra-blod 800;
+	font-family:verdana;
 }
 .hebergement1{
 	display: flex;
@@ -372,46 +377,52 @@ figcaption{
  }
 
 #Marseille>p{
-	font-weight: bolder;
 	margin-left: 25px;
-	font-size:1.1rem;
-	font: Raleway, sans serif;
 	display: none;
+
 }
 .plus{
 	text-decoration: none;
 	margin-left:24px;
-	font-weight: bold;
-	font-size: 16px;
+	font-family: Verdana;
+	font-size: 17px;
 	color: black;
+	font:extra-bold 800;
+	margin-left:25px;
+	
+
 }
 
  #Marseille>h2{
  	height: 3px;
- 	font-weight: bolder;
+ 	
 
 }
 #Marseille h3{
 	margin-bottom: 10px;
 	margin-left:13px;
+	font-size:15px;
 }
 
 
 /*---------/aside-------*/
 
 aside{
-	 display: flex;
-	 flex-direction: column; 
-	 margin-right: 40px;
-     background-color: #F2F2F2;
-     border-radius: 20px;
-     width: 440px;
-     margin-top: -46rem;
-     padding-bottom: 18px;
-     margin-left:1000px;
-     max-height: 700px;  
-     padding-top: 50px;
-     padding-left:4px;
+  display: flex;
+	flex-direction: column; 
+  margin-right: 40px;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  width: 440px;
+  margin-top: -46rem;
+  padding-bottom: 18px;
+  margin-left:1000px;
+  max-height: 700px;  
+  padding-top: 50px;
+  padding-left:4px;
+  font-size: 16px;
+	font: extra-blod 800;
+	font-family:verdana;
 
     
   
@@ -431,7 +442,7 @@ aside figure{
 aside figcaption{
 	
 	margin-left:150px;
-    margin-top:-150px;
+  margin-top:-150px;
 
 
 }
@@ -462,15 +473,15 @@ aside img{
 .fa-chart-line{
  	color:black; 
  	margin-top: 22px;
- 	margin-left: 140px;
+ 	margin-left: 120px;
  	font-size:20px;
 
  }
 
 aside .etoile{
-    color:#0065FC;
-    margin-left: 1.1em;
-    margin-top: 60px;
+  color:#0065FC;
+  margin-left: 1.1em;
+  margin-top: 60px;
      
 }
 .prix{
@@ -489,12 +500,19 @@ aside .etoile{
  #Activity{
  	display: flex;
  	flex-direction: row;
- 	margin-top: 20px;
- 	 padding: 20px;
- 	 width: 100%;
- 	 
-
+ 	margin-top: 6px;
+ 	padding: 20px;
+  width: 100%;
+  font-size: 17px;
+	font: extra-blod 800;
+	font-family:verdana; 
  }
+
+ .activity2 img{
+ 
+ 	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
  .activity1{
  	display: flex;
  	flex-direction: row;
@@ -508,32 +526,95 @@ aside .etoile{
 	height: 500px;
 
 }
+ .fort img{
+ 	height:200px; 
+ 	width:335px;
+  border-radius: 20px 20px 0px 0px; 
+  margin-top:-7px;
 
 
- .activity1 img{
- 	width: 260px;
- 	height: 500px;
- 	margin: -5px 10px 20px 0px;
- 	border-radius: 20px 20px 0px 0px;
+ }
+ .fort figure{
+  height:130px; 
+  width:290px;
+  margin-top: 16px;
+  margin-right: 40px;
+  margin-bottom: 25px;
+
+ }
+ .iles figure{
+  height:50px; 
+  width:285px;
+  margin-top:45px;
+ }
+.iles img {
+  height:120px; 
+  width:330px;
+  margin-top:-7px;
+  border-radius: 20px 20px 0px 0px; 
+
+}
+  
+.activit img{ 
+  width: 325px;
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+
+.activit figure{
+  width: 280px;
+  height: 110px;
+  margin-left:20px;
+  margin-top:10px;
  }
 
- .title h2{
-	padding-bottom: 5px;
-	padding-top: 10px;
+.dame figure{
+  height: 80px;
 }
-.activity2 img{
-	border-radius: 20px 0px;
+.longchamp img{
+  height: 190px;
 }
+.longchamp figure{
+  height: 120px;
+  margin-top: 35px;
+ }
+.title h2{
+
+	margin-top: 90px;
+  margin-bottom: -15px;
+	font-family: verdana;
+	font: extra-bold 800;
+	margin-left:50px;
+}
+
  
+.activity2 h3{
+	font-size:15px;
+} 
+
+.activity2 figure{
+	padding-top:7px;
+}
 .place img{
 	height: 420px; 
 	width: 310px;
-	border-radius: 20px 20px 0px 20px;
+	border-radius: 20px 20px 0px 0px;
+	margin-left:-8px;
+  margin-top:-8px;
 }
 
 .place figure{
-height: 350px;
-width: 300px;
+  height: 344px;
+  width: 266px;
+  margin-left:5px;
+  padding-right: 35px;
+  margin-bottom: 10px;
+
+}
+.activity1 h3{
+	margin-top:10px;
+	
 }
 
 /*---------Footer----------*/
@@ -547,51 +628,44 @@ width: 300px;
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 20px;
-
-
-
+  margin-top:20px;
 }
 #footer .hosting{
  margin-right: 100px;	
-
 }
  #footer .assistance{
  	margin-right: 500px;
  }
-
-
-
 #footer>.about> a{
 	text-decoration: none;
-    color: black;
-    margin-top: 0.5em;
-    margin-left: 3em;
-    line-height: 30px;
+  color: black;
+  margin-top: 0.5em;
+  margin-left: 3em;
+  line-height: 30px;
 }
- #footer>.hosting> a{
-    text-decoration: none;
-    color: black;
-    margin-top: 0.5em;
-    margin-left: 1em;
-    line-height: 30px;
+#footer>.hosting> a{
+  text-decoration: none;
+  color: black;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  line-height: 30px;
  }
 
- #footer>.assistance>a{
+#footer>.assistance>a{
  	text-decoration: none;
-    color: black;
-    margin-top: 0.5em;
-    margin-left: 1em;
-    line-height: 30px;
+  color: black;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  line-height: 30px;
  }
- .about h3{
-  	margin-left:46px;
-
+.about h3{
+	margin-left:46px;
   }
-   .hosting h3{
-   margin-left: 15px;
-   }
-   .assitance h3{
-   margin-right: 2px;
+.hosting h3{
+  margin-left: 15px;
+  }
+.assitance h3{
+  margin-right: 2px;
    }
 
 
