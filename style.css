@@ -554,18 +554,20 @@ aside .etoile{
   border-radius: 20px 20px 0px 0px; 
 
 }
-  
+.activit {
+  margin-right:30px;
+}  
 .activit img{ 
   width: 325px;
   height: 150px;
   border-radius: 20px 20px 0px 0px;
+  margin-top:-7px;
 }
 
 
 .activit figure{
   width: 280px;
-  height: 110px;
-  margin-left:20px;
+  height: 100px;
   margin-top:10px;
  }
 
