@@ -558,7 +558,7 @@ aside .etoile{
   margin-right:30px;
 }  
 .activit img{ 
-  width: 325px;
+  width: 290px;
   height: 150px;
   border-radius: 20px 20px 0px 0px;
   margin-top:-7px;
@@ -566,7 +566,7 @@ aside .etoile{
 
 
 .activit figure{
-  width: 280px;
+  width: 245px;
   height: 100px;
   margin-top:10px;
  }
@@ -579,7 +579,8 @@ aside .etoile{
 }
 .longchamp figure{
   height: 120px;
-  margin-top: 35px;
+  margin-top: 40px;
+ 
  }
 .title h2{
 
