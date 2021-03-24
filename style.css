@@ -1,14 +1,10 @@
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
-
 body {
   font-family: "Raleway";
   box-sizing: border-box;
   margin: 0px;
-  font-size: 1rem;
-  line-height: 1;
-  color: black;
   width: 100%;
 }
 
@@ -209,9 +205,9 @@ ul{
 
 .info-logement{
   display: flex;
-	justify-content: flex-start;
-	flex-wrap:nowrap;
-	margin-top: -10px;
+  align-items:  center;
+	margin-left: -15px;
+	margin-top:-20px;
 	padding:10px;
 }
 
@@ -430,8 +426,6 @@ strong{
  	margin-top: 6px;
  	padding: 20px;
   width: 100%;
-  font-size: 17px;
-	font-weight: bold;
  }
 #Activity h3{
   text-decoration: none;
@@ -479,6 +473,7 @@ strong{
 }
 .activit {
   margin-right:30px;
+  margin-top:15px;
 }  
 .activit img{ 
   width: 290px;
