@@ -457,7 +457,7 @@ strong{
  .iles figure{
   height:50px; 
   width:285px;
-  margin-top:58px;
+  margin-top:55px;
 
  }
 .iles img {
@@ -471,25 +471,24 @@ strong{
   margin-top:15px;
 }  
 .activit img{ 
-  width: 290px;
-  margin-top:-9px;
+  width: 320px;
+  margin-top:-15px;
   margin-right:10px;
 }
 
 .activit figure{
-  width: 245px;
-  margin-top:10px;
-  height: 100px;
- }
+  width: 275px;
+  margin-bottom: 12px;
+}
 
 .dame figure{
-  height: 80px;
+  height: 70px;
 }
 .longchamp img{
   height: 190px;
 }
 .longchamp figure{
-  height: 120px;
+  height: 110px;
   margin-top: 30px;
  }
 .title h2{
