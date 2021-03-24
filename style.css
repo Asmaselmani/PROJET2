@@ -54,7 +54,7 @@ nav li{
   font-size: 17px;
   }
  
- header {
+header {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
@@ -443,10 +443,6 @@ strong{
 	display: flex;
 	flex-direction: row;
 }
-.activity1 figure{
-	width: 250px;
-	height: 500px;
-}
  .fort img{
  	height:200px; 
  	width:335px;
@@ -456,14 +452,13 @@ strong{
  .fort figure{
   height:130px; 
   width:290px;
-  margin-top: 16px;
   margin-right: 40px;
-  margin-bottom: 25px;
  }
  .iles figure{
   height:50px; 
   width:285px;
-  margin-top:45px;
+  margin-top:58px;
+
  }
 .iles img {
   height:120px; 
@@ -495,7 +490,7 @@ strong{
 }
 .longchamp figure{
   height: 120px;
-  margin-top: 40px;
+  margin-top: 30px;
  }
 .title h2{
 	margin-top: 90px;
