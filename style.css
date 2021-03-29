@@ -27,7 +27,7 @@ body {
  header a:hover{
   margin-top:-3px;
   border-top: 2px solid #0065FC ;
-  font-weight: bold;
+  color: blue;
   transition-duration: 0.3s;  
   }
 
@@ -84,23 +84,25 @@ li{
   border-radius: 30px;
   text-decoration: none;
   padding-right:  20px;
-  transition-duration: 0.1s;
   font-weight: bold;
   color:#000000;
   font-size: 15px;
   }
 .filtration >  li > a  {
   margin-left: 10px;
-     }
+ }
+
 ul a{
 	text-decoration: none;
 	color: #000000;
 	    }
 .filtration li a:hover{     
   color: #0065FC ;
-  font-size: 16px;
+  transform: scale(0.5);
   font-style: oblique;
   transition-duration: 1s;
+  font-weight: bold;
+
   }
 .fa-money-bill-wave,.fa-dog,.fa-child, .fa-heart{
 	font-size: 1.25rem;
@@ -126,7 +128,7 @@ ul a{
 	border-width: 70%;
 	height: 50px;
 	cursor: pointer;
-	font: 1.4em , serif;
+	font: 1.4em , Arial;
 }
 
 .search_data{
@@ -141,7 +143,7 @@ ul a{
 	border: 1px solid #F2F2F2;
 	margin-left: -5px;
 	color:#000000;
-	font: 20px,serif;
+	font: 20px,Arial;
 }
 
 .fa-map-marker-alt {
