@@ -13,6 +13,7 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   overflow: hidden;
 }
 
@@ -20,6 +21,8 @@ body {
 .logo_img {
   margin-right: 800px;
   height: 55px;
+  margin-bottom: -30px;
+  margin-left: -17px;
   }
  header a:hover{
   margin-top:-3px;
@@ -31,11 +34,13 @@ body {
  .headerSignup {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   padding: 2rem;
   color: #0065FC;
   }
 nav li{
   display: flex;
+  flex-wrap: wrap;
   cursor: pointer;
   padding: 60px;
   margin: -10px;
@@ -53,8 +58,9 @@ nav li{
 header {
 	display: flex;
 	align-items: center;
-	padding:40px;
-	margin-top:-92px ;
+  flex-wrap: wrap;
+	padding:50px;
+	margin-top:-120px ;
   }
 
     /*boutton s'inscrire*/
@@ -77,8 +83,6 @@ li{
   text-decoration: none;
   padding-right:  20px;
   font-weight: bold;
-  color:#000000;
-  font-size: 15px;
   }
 .filtration >  li > a  {
   margin-left: 10px;
@@ -195,9 +199,10 @@ ul{
 .info-logement{
   display: flex;
   align-items:  center;
-	margin-left: -15px;
+	margin-left: -35px;
 	margin-top:-20px;
 	padding:10px;
+  flex-wrap: wrap;
 }
 
 #icone-i {
@@ -232,7 +237,7 @@ figure:hover{
 #Marseille {
 	background-color: #F2F2F2;
   border-radius: 20px;
-  width: 63%;
+  width: 61.8%;
   height: 650px;
   margin-bottom: 20px;
   font-size: 17px;
@@ -332,7 +337,7 @@ aside{
   border-radius: 20px;
   width: 30%;
   margin-top: -42.5rem;
-  padding-bottom: 18px;
+  padding-bottom: 24px;
   margin-left: 970px;
   font-size: 16px;
   font-weight: bold;
@@ -445,20 +450,20 @@ strong{
   margin-right: 40px;
  }
  .iles figure{
-  height:50px; 
+  height:62px; 
   width:285px;
-  margin-top:55px;
+  margin-top:45px;
 
  }
 .iles img {
-  height:120px; 
+  height:135px; 
   width:330px;
   margin-top:-7px;
   border-radius: 20px 20px 0px 0px; 
 }
 .activit {
   margin-right:30px;
-  margin-top:15px;
+  margin-top:10px;
 }  
 .activit img{ 
   width: 320px;
@@ -473,13 +478,14 @@ strong{
 
 .dame figure{
   height: 70px;
+  margin-bottom: 50px;
 }
 .longchamp img{
   height: 190px;
 }
 .longchamp figure{
-  height: 110px;
-  margin-top: 30px;
+  height: 108px;
+  margin-top: -5px;
  }
 .title h2{
 	margin-top: 90px;
@@ -570,12 +576,31 @@ strong{
  /****************
    @media (MOBILE)****** 
  *****************/  
-/*@media screen and  (max-width: 440px) {
- 
-  header{
-  padding-left: 0;
+/*@media screen and  (max-width: 600px) {
+    /*.container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }*/
+/*#header {
+    flex-direction: column-reverse;
 }
 }
+.search_data{
+padding-right: 0px,
+padding-left:0px;
+}
+  
+  
+#header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+}*/
+
+
+
 /*@media screen and (max-width:1450px) {
 body{
   width: auto;
