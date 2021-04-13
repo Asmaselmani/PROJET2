@@ -1,11 +1,9 @@
-
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
   font-family: "Raleway";
   box-sizing: border-box;
   margin: 0px;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .container {
@@ -57,9 +55,7 @@ nav li {
 #research {
   margin-left: 40px;
 }
-.fa-search{
-  visibility: hidden; 
-}
+
 header {
   display: flex;
   align-items: center;
@@ -155,8 +151,8 @@ ul a {
   border-radius: 15px 0px 0px 15px;
   font-size: 20px;
   padding: 14.6px;
+  font-size: 21px;
   padding-top: 12px !important;
-  padding-bottom: 17px;
 }
 
 h1 {
@@ -249,7 +245,7 @@ figure:hover {
 #Marseille {
   background-color: #F2F2F2;
   border-radius: 20px;
-  max-width: 61.8%;
+  width: 61.8%;
   height: 650px;
   margin-bottom: 20px;
   font-size: 17px;
@@ -349,7 +345,7 @@ aside {
   flex-direction: column;
   background-color: #F2F2F2;
   border-radius: 20px;
-  max-width: 30%;
+  width: 30%;
   margin-top: -42.5rem;
   padding-bottom: 24px;
   margin-left: 970px;
@@ -433,7 +429,7 @@ strong {
   flex-direction: row;
   margin-top: 6px;
   padding: 20px;
-  max-width: 100%;
+  width: 100%;
 }
 
   #Activity a{
@@ -467,7 +463,17 @@ strong {
     width: auto;
     margin-right: 40px;
   }
-  
+  .iles figure {
+    height: 62px;
+    width: auto;
+    margin-top: 45px;
+  }
+  .iles img {
+    height: 135px;
+    width: auto;
+    margin-top: -7px;
+    border-radius: 20px 20px 0px 0px;
+  }
   .activit {
     margin-right: 30px;
     margin-top: 10px;
@@ -519,7 +525,7 @@ strong {
 .iles figure {
   height: 62px;
   width: 285px;
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 .iles img {
@@ -663,44 +669,6 @@ strong {
     padding: 20px;
     width: auto;
   }
-
-@media screen and (max-width:760px) {
-.signUp {
-  margin-left:200px;
-  }
- 
-@media screen and (max-width:760px) {
-  .container{
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-  .search {
-    display:none;
-  }
-.fa-search{
-  visibility: visible;
-  color: white;
-  background-color: #0065FC;
-  border-radius: 7px;
-  font-size: 15px;
-  border: 2px solid white;
-  height: 15px;
-  padding: 16px;
-}
-
- @media screen and (max-width:760px) {
-  #footer{
-    flex-direction: column;
-  }
-#footer .assistance{
-  margin-right: 0px;
-  margin-left: 30px;
-  padding-top: 20px;
-}
-#footer .hosting{
-  margin-left: 30px;
-  padding-top: 20px;
 }
 /*@media screen and  (max-width: 600px) {
     /*.container {
@@ -711,7 +679,7 @@ strong {
 /*#header {
     flex-direction: column-reverse;
 }
-
+}
 .search_data{
 padding-right: 0px,
 padding-left:0px;
