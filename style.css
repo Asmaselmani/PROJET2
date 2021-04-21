@@ -28,6 +28,7 @@ header a:hover {
   border-top: 2px solid #0065FC;
   color: blue;
   transition-duration: 0.3s;
+
 }
 
 nav li {
@@ -53,16 +54,24 @@ header {
   align-items: baseline;
   padding: 30px;
 
-  
 }
-
+ .menu{
+  display: flex;
+  margin-right: 20px;
+ }
 /*boutton s'inscrire*/
 
 .signUp {
   color: #0065FC;
   font-weight: bolder;
 }
-
+.signUp:hover{
+  border:none;
+}
+nav {
+  display:flex;
+  align-items: center;
+   }
 /*-------------Main----------*/
 
 li {
@@ -78,10 +87,7 @@ li {
   margin-left: 10px;
 }
 
-nav a {
-  text-decoration: none;
-  color: #000000;
-}
+
 
 .filtration li a:hover {
   color: #0065FC;
@@ -200,7 +206,6 @@ ul.filtration{
   margin-left: -35px;
   margin-top: -20px;
   padding: 10px;
-  flex-wrap: wrap;
 }
 
 #icone-i {
@@ -654,12 +659,24 @@ strong {
     padding: 20px;
     width: auto;
   }
+  .filtre{
+    display: flex;
+    margin-right: 20px;
+  }
 
+a.activity:hover{
+  border:none;
+
+}
+
+a.hosting:hover{
+  border:none;
+  border-bottom: 3px solid #0065FC;
+}
  nav li {
   line-height: 0px;
   margin: 0px 0px 20px -50px;
-  margin-right: 0px!important;
-  flex-wrap:wrap;
+ 
    }
    nav ul{
     flex-direction: column-reverse;
@@ -667,34 +684,40 @@ strong {
    }
    
    .signUp{
-   margin:-40px 40px;
+   margin-top:-250px;
+
    }
   aside{
     margin-left: auto;
+    border-radius: 0px;
+    width: 100%;
     }
 
+.fa-chart-line{
+  margin-top:0px;
+}
   .container{
     margin-left: auto;
     margin-right: auto;
-    
 }
 
   header{
     flex-direction: column;
     align-items: baseline;
 }
-nav .navheader{
-  display: flex;
+nav ul:hover{
+  border-top:none;
 }
 a.hosting{
     margin-bottom: 40px;
     margin-left: -160px;
-    border-bottom: 3px solid #0065FC;
     padding:20px;
 }
 
 a.activity{
-
+  margin-top: 90px;
+  position: absolute;
+  margin-left: 20px;
 }
   .search {
     display:none;
@@ -716,8 +739,24 @@ a.activity{
 }
 #Marseille{
   height: auto;
+  background-color: white;
+  order:2
 }
-
+#Marseille > h2{
+  margin-left:0px;
+}
+.activity1{
+  flex-wrap:wrap;
+}
+.activity2{
+  flex-wrap:wrap;
+}
+.title h2{
+  margin-top:10px;
+}
+.plus{
+  margin-left:-10px;
+}
 #footer .about{
   margin:25px 0px;
 }
@@ -729,13 +768,15 @@ a.activity{
  margin:25px 30px;
 }
 }
-
+  /*******@media tablette*******/
 @media screen and (min-width:761px) and (max-width: 1024px) {
  
  nav ul{
-  margin: 30px 0px 0px 50px;
+  margin: 30px 20px 0px 50px;
  }
-
+.signUp{
+  margin-top:30px;
+}
 
  #footer .assistance {
   margin:0px 30px 40px;
