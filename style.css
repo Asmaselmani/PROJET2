@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -20,105 +20,63 @@ body {
 .logo_img {
   
   height: 55px;
-  margin-top:120px;
+  padding-left:40px;
 }
- header a:hover {
+header a:hover {
   
   border-top-color:#0065FC;
   color: blue;
   transition-duration: 0.3s;
 }
-ul a{
-  border-top: 2px solid transparent;
-  padding:30px 0px;
-}
 
 nav li {
   display: flex;
   cursor: pointer;
-  padding: 25px 10px;
+  font-size: 17px;
   border: none;
   font-weight: normal;
-  font-size: 17px;
+  width: 50%;
+  justify-content: space-around;
 }
 
-#research {
-  margin-left: 40px;
-}
-.fa-search{
-  visibility: hidden; 
-}
 header {
   display: flex;
-  margin-top: -120px;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 30px;
-  
-}
- .menu{
-  display: flex;
-  margin-right: 20px;
- }
-/*boutton s'inscrire*/
-
-.signUp {
-  color: #0065FC;
-  font-weight: bolder;
-}
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  }
 
 nav {
   display:flex;
   align-items: center;
+  margin-right: 50px;
+  width: 50%;
+  justify-content: flex-end;
    }
-
-  
-/*-------------Main----------*/
-
-li {
-  margin: 20px;
-  list-style-type: none;
-  border: 2px solid #f2f2f2;
-  border-radius: 30px;
-  padding-right: 30px;
-  font-weight: bold;
-}
-
-.filtration>li>a {
-  margin-left: 10px;
-}
-
-
-
-.filtration li a:hover {
-  color: #0065FC;
-  transform: scale(0.5);
-  font-style: oblique;
-  transition-duration: 0.3s;
-  font-weight: bold;
-}
-
-.fa-money-bill-wave, .fa-dog, .fa-child, .fa-heart {
-  font-size: 1.25rem;
-  color: blue;
-  border-radius: 50%;
-  background-color: #DEEBFF;
-  padding: 0.6rem;
-  position: relative;
+ .menu{
   display: flex;
-  align-self: center;
+  margin-right: 20px;
+ }
+ .menu a{
+  border-top: 2px solid transparent;
+  padding: 25px;
 }
 
-.filtration i {
-  color: #0065FC;
+/* barre de recherche*/
+#research {
+  padding-left:50px;
+  padding-top:120px;
 }
-
+.fa-search{
+  visibility: hidden; 
+}
 .search {
   color: white;
   font-size: 1.1rem;
   border: 2px solid white;
   background-color: #0065FC;
-  border-radius: 0rem 0.6rem 0.6rem 0rem;
+  border-radius:0px 15px 15px 0px;
   height: 50px;
   cursor: pointer;
   font: 1.4em, Arial;
@@ -147,6 +105,56 @@ li {
   padding-top: 12px !important;
   padding-bottom: 17px;
 }
+/*boutton s'inscrire*/
+.signUp {
+  color: #0065FC;
+  font-weight: bolder;
+  display: flex;
+  }
+/* Section filtration*/
+.filtration li {
+  margin: 20px;
+  list-style-type: none;
+  border: 2px solid #f2f2f2;
+  border-radius: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+.filtration>li>a {
+  margin-left: 10px;
+}
+
+.filtration li a:hover {
+  color: #0065FC;
+  transform: scale(0.5);
+  font-style: oblique;
+  transition-duration: 0.3s;
+  font-weight: bold;
+}
+
+.fa-money-bill-wave, .fa-dog, .fa-child, .fa-heart {
+  font-size: 1.25rem;
+  color: blue;
+  border-radius: 50%;
+  background-color: #DEEBFF;
+  padding: 0.6rem;
+  position: relative;
+  display: flex;
+  align-self: center;
+}
+
+.filtration i {
+  color: #0065FC;
+}
+ul.filtration{
+  margin-right: -40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
 
 h1 {
   margin-top: -95px;
@@ -155,10 +163,7 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
-  margin-left: 25px;
-  line-height: 17px;
-  margin-bottom: 10px;
+  font-size: 21px;
 }
 
 h3 {
@@ -181,32 +186,21 @@ p {
   font-weight: normal;
 }
 
-.filtre {
+h2.filtre {
   margin-left: -37px;
-  border: none;
-  margin-top: 30px;
-  margin-right: -10px;
+  margin-top: 32px;
+  font-size:18px;
+  display: flex;
 }
 
 a img {
   object-fit: cover;
 }
 
- ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 100%;
-}
-ul.filtration{
-  margin-right: -40px;
-}
 .info-logement {
   display: flex;
   align-items: center;
-  margin-left: -35px;
-  margin-top: -20px;
-  padding: 10px;
+  padding:0px 0px 20px ;
 }
 
 #icone-i {
@@ -225,7 +219,8 @@ ul.filtration{
   width: 0.1rem;
 }
 
-/*-------HÃ©bergements-------*/
+/*-------MAIN--------*/
+/*-------Hebergements-------*/
 
 a {
   text-decoration: none;
@@ -243,26 +238,24 @@ figure:hover {
 .hebergement{
   display: flex;
   flex-wrap:wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
 }
 #Marseille {
   background-color: #F2F2F2;
   border-radius: 20px;
-  max-width: 61.8%;
-  font-size: 17px;
+  width: 62%;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 35px;
-  margin-left: 20px;
-  padding-left: 20px;
-
+  justify-content: space-around;
+  height: auto;
 }
+
 
 .hebergement1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 20px;
 }
 
 .hebergement2 {
@@ -326,44 +319,36 @@ figure img {
 }
 
 .plus {
-  font-size: 17px;
+  font-size: 19px;
   font-weight: bold;
-  margin-left: 25px;
-  margin-top: 40px;
+  width: 92%;
+  padding:20px;
 }
 
 #Marseille>h2 {
-  
-  margin-top: 45px;
+  width: 92%;
 }
 
 #Marseille h3 {
-  margin-bottom: 10px;
-  margin-left: 13px;
+ margin:25px 0px auto 20px;
   font-size: 15px;
 }
 
 /*---------/aside-------*/
 
 aside {
-  display: flex;
   flex-direction:column;
   background-color: #F2F2F2;
   border-radius: 20px;
   width: 30%;
+  display: flex;
   font-size: 16px;
-  padding-top: 60px;
-  padding-left: 20px;
-  padding-right: 10px;
 }
 
 aside figure {
-  width: 334px;
+  width: 81%;
   height: 50px;
-  margin: 13px;
-  padding-left: 5px;
-  margin-left: 20px;
-}
+  }
 
 aside figcaption {
   margin-left: 150px;
@@ -390,14 +375,13 @@ aside img {
 .populaire {
   display: flex;
   box-sizing: border-box;
+  justify-content: space-between;
+  padding: 0 30px;
 }
-.populaire h2{
-  margin-top:-10px;
-}
+
 .fa-chart-line {
   color: black;
   margin-top: 22px;
-  margin-left: 160px;
   font-size: 20px;
 }
 
@@ -431,7 +415,10 @@ strong {
   flex-direction: row;
   margin-top: 6px;
   padding: 20px;
-  max-width: 100%;
+  width: 100%;
+}
+.title h2{
+margin: 50px 0px -20px 30px;
 }
 
   #Activity a{
@@ -552,11 +539,8 @@ strong {
   margin-top: -5px;
 }
 
-.title h2 {
-  margin-top: 90px;
-  margin-bottom: -15px;
-  margin-left: 30px;
-}
+
+
 
 .activity2 h3 {
   font-size: 15px;
@@ -648,7 +632,7 @@ strong {
 /****************
    @media (MOBILE)****** 
  *****************/
-@media screen and (max-width:760px) {
+@media screen and (max-width:673px) {
   #Activity {
     flex-wrap: wrap;
     margin-top: 6px;
@@ -659,7 +643,23 @@ strong {
     display: flex;
     margin-right: 20px;
   }
-
+nav{
+  flex-direction: column-reverse;
+  width: 100%;
+}
+.menu a{
+  border-bottom:  3px solid transparent;
+  border-top:0px;
+  }
+  header a:hover {
+  
+  border-bottom-color:#0065FC;
+  border-top-color: white;
+  color: blue;
+}
+.menu{
+  margin:0;
+}
 /*a.activity:hover{
   color:#0065FC;
 border-top:3px solid blue;
@@ -680,7 +680,7 @@ a.hosting:hover{
   color: #0065FC;
   border-top-color: #0065FC;
 }*/
- nav li {
+ /*nav li {
   line-height: 0px;
   margin: 0px 0px 20px -50px;
  
@@ -693,34 +693,30 @@ a.hosting:hover{
    .signUp{
    margin-top:-250px;
 
-   }
+   }*/
   aside{
-    margin-left: auto;
+    padding:0;
     border-radius: 0px;
     width: 100%;
     }
 
-.fa-chart-line{
-  margin-top:0px;
-}
   .container{
     margin-left: auto;
     margin-right: auto;
 }
 
-  header{
-    flex-direction: column;
-    align-items: baseline;
+header{
+  border-bottom: 2px solid #F2F2F2;
 }
-
-
   .search {
     display:none;
   }
 .logo_img{
-  margin-bottom: -25px;
+  margin-bottom: -40px;
   }
-
+.signUp{
+  padding-left:290px;
+}
 .fa-search{
   visibility: visible;
   color: white;
@@ -766,13 +762,17 @@ a.hosting:hover{
 }
 }
   /*******@media tablette*******/
-@media screen and (min-width:761px) and (max-width: 1024px) {
+@media screen and (min-width:673px) and (max-width: 1024px) {
+ #Marseille{
+  width: 100%;
+ }
  
- nav ul{
-  margin: 30px 20px 0px 50px;
+ aside{
+  width: 100%;
+  margin-top:20px;
  }
 .signUp{
-  margin-top:30px;
+  margin-top:0px;
 }
 
  #footer .assistance {
@@ -790,11 +790,7 @@ a.hosting:hover{
   margin:0px 30px 40px;
  } 
 }
- @media screen and (min-width:1024px){
-  #header{
-    width: 100%;
-  }
- }
+ 
  /*nav ul{
   margin: 30px 0px 0px 300px;
  }
