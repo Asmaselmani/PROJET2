@@ -81,19 +81,16 @@ nav {
   cursor: pointer;
   font: 1.4em, Arial;
 }
-
+.formulaire{
+  display: flex;
+  flex-direction: row;
+}
 .search_data {
-  background-color: #FFFFFF;
-  border: none;
   font-size: 16px;
   font-weight: bold;
   padding-left: 13px;
-  height: 45px;
-  margin-right: -5px;
+  margin-right: -6px;
   border: 1px solid #F2F2F2;
-  margin-left: -5px;
-  color: #000000;
-  font: 20px, Arial;
 }
 
 .fa-map-marker-alt {
@@ -115,9 +112,9 @@ nav {
 .filtration li {
   margin: 20px;
   list-style-type: none;
-  border: 2px solid #f2f2f2;
+  border: 3px solid #f2f2f2;
   border-radius: 30px;
-  padding-right: 30px;
+  padding-right: 20px;
   font-weight: bold;
 }
 
@@ -148,11 +145,10 @@ nav {
   color: #0065FC;
 }
 ul.filtration{
-  margin-right: -40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
   width: 100%;
+  padding:0;
 }
 
 
@@ -167,9 +163,7 @@ h2 {
 }
 
 h3 {
-  margin-top: 10px;
-  margin-left: 20px;
-  font-size: 16px;
+  margin:10px;
   font-weight: bold;
 }
 
@@ -180,19 +174,14 @@ h3>a {
   margin-left: 3em;
 }
 
-p {
-  font-size: 1em;
-  font-style: normal;
-  font-weight: normal;
-}
 
 h2.filtre {
-  margin-left: -37px;
-  margin-top: 32px;
   font-size:18px;
-  display: flex;
 }
-
+.fil{
+  display: flex;
+  align-items: center;
+}
 a img {
   object-fit: cover;
 }
@@ -200,7 +189,7 @@ a img {
 .info-logement {
   display: flex;
   align-items: center;
-  padding:0px 0px 20px ;
+  margin:0 -25px 20px;
 }
 
 #icone-i {
@@ -249,6 +238,7 @@ figure:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   height: auto;
+  order: 1;
 }
 
 
@@ -276,11 +266,22 @@ figure:hover {
 .grey {
   color: lightgrey;
 }
+/*#Marseille figure{
+  border-radius: 20px;
+  background-color: white;
+  width: 87%;
+  margin: 15px;
+  font-size: 12px;
+  box-shadow: 3px 3px 5px #ddd7de;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 4.5px;
+}*/
+
 
 figure {
   border-radius: 20px;
   background-color: white;
-  object-fit: cover;
   width: 210px;
   height: 125px;
   margin: 15px;
@@ -291,10 +292,13 @@ figure {
   padding-right: 2.8rem;
   font-size: 12px;
   box-shadow: 3px 3px 5px #DDD7DE;
-  font-weight: bolder;
   cursor: pointer;
 }
 
+aside figure{
+  width: 81%;
+  height: 50px;
+}
 figure:hover {
   transition-duration: 0.2s;
 }
@@ -321,17 +325,12 @@ figure img {
 .plus {
   font-size: 19px;
   font-weight: bold;
-  width: 92%;
+  width: 87%;
   padding:20px;
 }
 
 #Marseille>h2 {
-  width: 92%;
-}
-
-#Marseille h3 {
- margin:25px 0px auto 20px;
-  font-size: 15px;
+  width: 87%;
 }
 
 /*---------/aside-------*/
@@ -339,17 +338,17 @@ figure img {
 aside {
   flex-direction:column;
   background-color: #F2F2F2;
-  border-radius: 20px;
   width: 30%;
   display: flex;
   font-size: 16px;
+  padding:0 10px;
+  border-radius: 20px 20px;
+  order:2;
 }
-
-aside figure {
-  width: 81%;
-  height: 50px;
-  }
-
+aside a{
+  display: flex;
+  justify-content: center;
+}
 aside figcaption {
   margin-left: 150px;
   margin-top: -158px;
@@ -385,13 +384,17 @@ aside img {
   font-size: 20px;
 }
 
-aside .etoile {
-  color: #0065FC;
-  margin-left: 1.1em;
-  margin-top: 50px;
-}
 
-aside .etoile1 {
+aside .etoile1{
+ 
+  margin-left: 10px;
+  margin-top: 60px;
+}
+aside .etoile2{
+  margin:50px 0 0 10px;
+  }
+
+aside .etoile{
   margin-top: 60px;
   margin-left: 1.1em;
 }
@@ -412,13 +415,13 @@ strong {
 
 #Activity {
   display: flex;
-  flex-direction: row;
   margin-top: 6px;
-  padding: 20px;
+  padding: 20px 30px;
   width: 100%;
+  flex-wrap: wrap;
 }
 .title h2{
-margin: 50px 0px -20px 30px;
+margin: 50px 0px 0px 40px;
 }
 
   #Activity a{
@@ -634,19 +637,31 @@ margin: 50px 0px -20px 30px;
  *****************/
 @media screen and (max-width:673px) {
   #Activity {
-    flex-wrap: wrap;
-    margin-top: 6px;
-    padding: 20px;
-    width: auto;
+   padding:0;
   }
-  .filtre{
-    display: flex;
-    margin-right: 20px;
+  .fil{
+    align-items: flex-start;
+    margin-top:10px;
   }
+
+  h2.filtre{
+    margin-left:30px;
+    position: absolute;
+    margin-top:20px;
+  }
+
+  ul.filtration{
+    padding:15px 0;
+  }
+} 
+  
+  @media screen and (max-width:673px) {
 nav{
   flex-direction: column-reverse;
   width: 100%;
+  margin-right:0;
 }
+
 .menu a{
   border-bottom:  3px solid transparent;
   border-top:0px;
@@ -659,52 +674,39 @@ nav{
 }
 .menu{
   margin:0;
+  padding-left:0;
+  flex-direction: row;
 }
-/*a.activity:hover{
-  color:#0065FC;
-border-top:3px solid blue;
+#Marseille{
+  width: 100%;
 }
-a.hosting{
-    margin-bottom: 40px;
-    margin-left: -160px;
-    padding:20px;
-    
+#research{
+  padding-left:20px;
+}
 }
 
-a.activity{
-  margin-top: 90px;
-  position: absolute;
-  margin-left: 20px;
-}
-a.hosting:hover{
-  color: #0065FC;
-  border-top-color: #0065FC;
-}*/
- /*nav li {
-  line-height: 0px;
-  margin: 0px 0px 20px -50px;
  
-   }
+ @media screen and (max-width:673px) {
+ 
+  
    nav ul{
     flex-direction: column-reverse;
     margin-left: 200px;
    }
-   
-   .signUp{
-   margin-top:-250px;
-
-   }*/
+   .filtration li{
+    margin-bottom: 5px;
+   }
+ }
+   @media screen and (max-width:673px) {
   aside{
     padding:0;
     border-radius: 0px;
     width: 100%;
+    margin:auto;
+    order:1;
     }
 
-  .container{
-    margin-left: auto;
-    margin-right: auto;
-}
-
+  
 header{
   border-bottom: 2px solid #F2F2F2;
 }
@@ -713,9 +715,11 @@ header{
   }
 .logo_img{
   margin-bottom: -40px;
+  padding-left:10px;
+  height: 47px;
   }
 .signUp{
-  padding-left:290px;
+margin-left:230px;
 }
 .fa-search{
   visibility: visible;
@@ -733,8 +737,11 @@ header{
   background-color: white;
   order:2
 }
+aside > a  > figure >  figcaption{
+  width: 50%;
+}
 #Marseille > h2{
-  margin-left:0px;
+  margin-left:30px;
 }
 .activity1{
   flex-wrap:wrap;
@@ -761,16 +768,22 @@ header{
  margin:25px 30px;
 }
 }
+
   /*******@media tablette*******/
-@media screen and (min-width:673px) and (max-width: 1024px) {
- #Marseille{
-  width: 100%;
+
+@media screen and (max-width: 1024px)  {
+
+section > #Marseille {
+  width: 98%;
  }
- 
+
  aside{
-  width: 100%;
-  margin-top:20px;
- }
+  width: 90%;
+  margin-top: 30px;
+  order:-1;
+  border-radius: 0px;
+ 
+}
 .signUp{
   margin-top:0px;
 }
@@ -780,24 +793,7 @@ header{
  } 
 
  #Activity {
-  flex-wrap: wrap;
   width: auto;
   }
 }
 
-@media screen and (min-width:1024px) and (max-width: 1420px) {
-  #footer .assistance {
-  margin:0px 30px 40px;
- } 
-}
- 
- /*nav ul{
-  margin: 30px 0px 0px 300px;
- }
-*/
-
-/*@media screen and (min-width:761px){
- .logo_img{
-  margin-right: 0px
- }
-}*/
