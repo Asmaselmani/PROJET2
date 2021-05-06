@@ -66,7 +66,6 @@ nav {
 /* barre de recherche*/
 #research {
   padding-left:50px;
-  padding-top:120px;
 }
 .fa-search{
   visibility: hidden; 
@@ -79,7 +78,7 @@ nav {
   border-radius:0px 15px 15px 0px;
   height: 50px;
   cursor: pointer;
-  font: 1.4em, Arial;
+  padding:10px;
 }
 .formulaire{
   display: flex;
@@ -112,7 +111,7 @@ nav {
 .filtration li {
   margin: 20px;
   list-style-type: none;
-  border: 3px solid #f2f2f2;
+  border: 2px solid #DCDCDC;
   border-radius: 30px;
   padding-right: 20px;
   font-weight: bold;
@@ -132,18 +131,13 @@ nav {
 
 .fa-money-bill-wave, .fa-dog, .fa-child, .fa-heart {
   font-size: 1.25rem;
-  color: blue;
+  color: #0065FC;
   border-radius: 50%;
   background-color: #DEEBFF;
-  padding: 0.6rem;
-  position: relative;
-  display: flex;
-  align-self: center;
+  padding: 10px;
 }
 
-.filtration i {
-  color: #0065FC;
-}
+
 ul.filtration{
   display: flex;
   flex-wrap: wrap;
@@ -153,9 +147,7 @@ ul.filtration{
 
 
 h1 {
-  margin-top: -95px;
   font-size: 19px;
-  font-weight: bold;
 }
 
 h2 {
@@ -189,7 +181,7 @@ a img {
 .info-logement {
   display: flex;
   align-items: center;
-  margin:0 -25px 20px;
+  margin:0 0 20px -25px;
 }
 
 #icone-i {
@@ -260,7 +252,7 @@ figure:hover {
 }
 
 .etoile {
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
 .grey {
@@ -284,12 +276,8 @@ figure {
   background-color: white;
   width: 210px;
   height: 125px;
-  margin: 15px;
-  margin-top: 20px;
-  padding-left: 4px;
-  padding-bottom: 6.6rem;
-  padding-top: 4px;
-  padding-right: 2.8rem;
+  margin: 20px 15px;
+  padding:4px 44px 105px 4px;
   font-size: 12px;
   box-shadow: 3px 3px 5px #DDD7DE;
   cursor: pointer;
@@ -298,6 +286,7 @@ figure {
 aside figure{
   width: 81%;
   height: 50px;
+
 }
 figure:hover {
   transition-duration: 0.2s;
@@ -415,10 +404,11 @@ strong {
 
 #Activity {
   display: flex;
-  margin-top: 6px;
-  padding: 20px 30px;
+  margin-top: 20px;
+  padding-left: 10px;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .title h2{
 margin: 50px 0px 0px 40px;
@@ -502,7 +492,6 @@ margin: 50px 0px 0px 40px;
 .iles figure {
   height: 62px;
   width: 285px;
-  margin-top: 30px;
 }
 
 .iles img {
@@ -595,7 +584,9 @@ margin: 50px 0px 0px 40px;
 #footer .assistance {
   margin-right: 500px;
 }
-
+ h3 .assistance {
+  margin-left:15px;
+ }
 #footer>.about>a {
   text-decoration: none;
   color: black;
@@ -627,15 +618,14 @@ margin: 50px 0px 0px 40px;
 .hosting h3 {
   margin-left: 15px;
 }
-
-.assitance h3 {
-  margin-right: 2px;
+.assistance h3{
+  margin-left:15px;
 }
 
 /****************
    @media (MOBILE)****** 
  *****************/
-@media screen and (max-width:673px) {
+@media screen and (max-width:585px) {
   #Activity {
    padding:0;
   }
@@ -655,7 +645,8 @@ margin: 50px 0px 0px 40px;
   }
 } 
   
-  @media screen and (max-width:673px) {
+  @media screen and (max-width:585px) {
+
 nav{
   flex-direction: column-reverse;
   width: 100%;
@@ -674,19 +665,18 @@ nav{
 }
 .menu{
   margin:0;
-  padding-left:0;
+  padding:25px 30px 0 25px;
   flex-direction: row;
 }
-#Marseille{
-  width: 100%;
-}
+
 #research{
   padding-left:20px;
 }
+
 }
 
  
- @media screen and (max-width:673px) {
+ @media screen and (max-width:585px) {
  
   
    nav ul{
@@ -697,7 +687,8 @@ nav{
     margin-bottom: 5px;
    }
  }
-   @media screen and (max-width:673px) {
+   @media screen and (max-width:585px) {
+  
   aside{
     padding:0;
     border-radius: 0px;
@@ -705,8 +696,23 @@ nav{
     margin:auto;
     order:1;
     }
-
+aside .etoile2{
+  margin-top:20px;
+}
   
+  aside .etoile{
+    margin-top:40px;
+  }
+aside .etoile1{
+  margin-top:45px;
+}
+  aside h3{
+    line-height: 20px;
+    font-size: 13px;
+  }
+  strong{
+    font-size: 12px;
+  }
 header{
   border-bottom: 2px solid #F2F2F2;
 }
@@ -719,7 +725,9 @@ header{
   height: 47px;
   }
 .signUp{
-margin-left:230px;
+position: absolute;
+right: 25px;
+top:25px;
 }
 .fa-search{
   visibility: visible;
@@ -735,8 +743,10 @@ margin-left:230px;
 #Marseille{
   height: auto;
   background-color: white;
-  order:2
+  order:2;
+  width:100%;
 }
+
 aside > a  > figure >  figcaption{
   width: 50%;
 }
@@ -764,6 +774,7 @@ aside > a  > figure >  figcaption{
  margin:25px 30px;
  }
 
+
 #footer .hosting{
  margin:25px 30px;
 }
@@ -771,18 +782,17 @@ aside > a  > figure >  figcaption{
 
   /*******@media tablette*******/
 
-@media screen and (max-width: 1024px)  {
+@media screen and (min-width: 585px) and (max-width: 1024px)  {
 
-section > #Marseille {
-  width: 98%;
+#Marseille {
+  width: 92%;
  }
 
  aside{
   width: 90%;
-  margin-top: 30px;
+  margin-bottom: 30px;
   order:-1;
-  border-radius: 0px;
- 
+  
 }
 .signUp{
   margin-top:0px;
@@ -797,3 +807,10 @@ section > #Marseille {
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1485){
+
+
+#Activity{
+  padding:0;
+}
+}
