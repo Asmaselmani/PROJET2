@@ -1,5 +1,6 @@
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+  
+   @import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
   font-family: "Raleway";
   margin: auto;
@@ -568,10 +569,6 @@ margin: 50px 0px 0px 20px;
   margin-top: 20px;
 }
 
-#footer .hosting {
-  margin-right: 100px;
-}
-
 #footer .assistance {
   margin-right: 500px;
 }
@@ -802,6 +799,8 @@ margin:-7px 0;
 }
 }
 
+/*******@media tablette*******/
+
 @media screen and (max-width:947px) and (min-width: 586px) {
   #Marseille figure{
     width: 100%;
@@ -926,10 +925,8 @@ margin:-7px 0;
 }
 #Activity h3{
   margin-top:20px;
+ }
 }
-}
-
-  /*******@media tablette*******/
 
 @media screen and (max-width: 1394px) and (min-width: 947px)  {
 
@@ -952,19 +949,4 @@ margin:-7px 0;
  #footer .assistance {
   margin:0px 30px 40px;
  } 
-
-}
-
-/*@media screen and (max-width: 1393px) and (min-width: 1249px)  {
-#Marseille{
-  flex-wrap: nowrap;
-}
-aside{
-  grid-gap: 30px;
-}
-.plus{
-  width: 60%;
-  position: absolute;
-  align-self: flex-end;
-}
 }
