@@ -799,8 +799,6 @@ margin:-7px 0;
 }
 }
 
-/*******@media tablette*******/
-
 @media screen and (max-width:947px) and (min-width: 586px) {
   #Marseille figure{
     width: 100%;
@@ -872,6 +870,8 @@ aside > a  > figure >  figcaption{
  margin:25px 30px;
 }
 }
+
+/*******@media tablette*******/
 
 @media screen and (min-width: 728px) and ( max-width: 1435px) {
   #Activity{
